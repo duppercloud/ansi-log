@@ -1057,7 +1057,7 @@ func (l *Logger) Bail(err error) {
 			if (i == 1 || i == 3) && strings.Contains(line, "ansi-log.(*Logger).Bail") {
 				continue
 			}
-			if (i == 2 || i == 4) && strings.Contains(line, "tillberg/ansi-log/log.go") {
+			if (i == 2 || i == 4) && strings.Contains(line, "duppercloud/ansi-log/log.go") {
 				continue
 			}
 			l.intOutput(2, []byte(line+"\n"), true)
